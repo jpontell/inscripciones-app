@@ -1,1 +1,32 @@
+!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Inscripción por Bloques</title>
+</head>
+<body>
+<h2>Formulario de Inscripción</h2>
 
+<input type="text" id="rut" placeholder="Ingrese RUT">
+<select id="bloque">
+  <option value="Bloque 1">Horario Bloque 1</option>
+  <option value="Bloque 2">Horario Bloque 2</option>
+</select>
+<button onclick="inscribir()">Inscribirse</button>
+
+<h3>Inscritos</h3>
+<p id="cupos"></p>
+<table border="1">
+  <thead>
+    <tr>
+      <th>RUT</th>
+      <th>Bloque</th>
+      <th>Fecha</th>
+    </tr>
+  </thead>
+  <tbody id="tabla"></tbody>
+</table>
+
+<script src="script.js"></script>
+</body>
+</html>
